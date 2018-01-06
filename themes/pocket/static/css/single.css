@@ -1,0 +1,26 @@
+.post-content {
+    margin: 0 auto;
+    margin-top: 3em;
+    width: 70%;
+    color: #2A3439;
+    font-size: 1em;
+}
+
+.post-title {
+  margin: 0 auto;
+  width: 70%;
+}
+.post-title > h1 {
+  font-size: 3em;
+}
+
+.back-to-index{
+  margin: 0 auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  width: 70%;
+}
+
+.back-to-index > a {
+  color: #007936;
+}

@@ -1,0 +1,19 @@
+{{ partial "header" . }}
+<head>
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/single.css"/>
+</head>
+<main>
+  <div class="post-title">
+    <h1>{{ .Title }}</h1>
+    <h4>Posted on {{ .Date.Format "January 2, 2006" }} </h4>
+  </div>
+  <div class="post-content">
+    <hr>
+    {{ .Content }}
+    <hr>
+  </div>
+  <div class="back-to-index">
+    <a href="{{ .Site.BaseURL }}/post/">Back to Post List</a>
+  </div>
+</main>
+{{ partial "footer" .}}

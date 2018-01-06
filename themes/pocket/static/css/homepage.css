@@ -1,0 +1,48 @@
+body {
+  background-color: #007936;
+}
+
+.title {
+  text-align: center;
+  transform: translateY(22vh);
+}
+
+.title > h1 {
+  font-family: 'Arvo', serif;
+  font-size: 12vh;
+  padding: 3rem;
+  border: thick solid white;
+  display: inline;
+  color: white;
+}
+
+.title > h2 {
+  font-family: 'Arvo', serif;
+  color: white;
+  font-style: italic;
+}
+
+.links {
+  transform: translateY(36vh);
+  text-align: center;
+}
+
+.links > a {
+  font-family: 'Arvo', serif;
+  font-size: 1em;
+  color: white;
+  margin-left: 1em;
+  margin-right: 1em;
+  display: inline-block;
+  text-decoration: none;
+  width: 7em;
+  height: 7em;
+  line-height: 7em;
+  border: none;
+  border-radius: 50%;
+}
+
+.links > a:hover {
+  color: #007936;
+  background-color: white;
+}
