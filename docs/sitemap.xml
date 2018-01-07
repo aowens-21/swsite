@@ -3,17 +3,34 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>aowens-21.github.io/swsite/</loc>
+    <loc>www.aowens.me/post/post1/</loc>
+    <lastmod>2018-01-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>www.aowens.me/post/post3/</loc>
+    <lastmod>2018-01-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>www.aowens.me/</loc>
+    <lastmod>2018-01-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>aowens-21.github.io/swsite/categories/</loc>
+    <loc>www.aowens.me/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>aowens-21.github.io/swsite/tags/</loc>
+    <loc>www.aowens.me/post/</loc>
+    <lastmod>2018-01-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>www.aowens.me/tags/</loc>
     <priority>0</priority>
   </url>
   
