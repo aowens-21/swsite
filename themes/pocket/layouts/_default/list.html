@@ -9,7 +9,7 @@
       {{ range .Pages }}
       <li>
         <div class="item">
-          <a href="{{ .RelPermalink }}">{{ .Title }} - <time datetime="{{ .Date.Format "January 2, 2006" }}">{{ .Date.Format "January 2, 2006" }}</time></a>
+          <a href="{{ .Permalink }}">{{ .Title }} - <time datetime="{{ .Date.Format "January 2, 2006" }}">{{ .Date.Format "January 2, 2006" }}</time></a>
         </div>
       </li>
       {{ end }}
