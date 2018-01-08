@@ -1,4 +1,4 @@
-baseURL = "www.aowens.me"
+baseURL = "https://aowens.me/"
 languageCode = "en-us"
 title = "Alex Owens"
 theme = "pocket"

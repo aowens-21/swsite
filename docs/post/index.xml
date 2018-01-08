@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Alex Owens</title>
-    <link>www.aowens.me/post/</link>
+    <link>https://aowens.me/post/</link>
     <description>Recent content in Posts on Alex Owens</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 05 Jan 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="www.aowens.me/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://aowens.me/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>This is a Test Post</title>
-      <link>www.aowens.me/post/post1/</link>
+      <link>https://aowens.me/post/post1/</link>
       <pubDate>Fri, 05 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>www.aowens.me/post/post1/</guid>
+      <guid>https://aowens.me/post/post1/</guid>
       <description>There is some stuff here. There is some stuff here. There is some stuff here. There is some stuff here. There is some stuff here. There is some stuff here. There is some stuff here. There is some stuff here. There is some stuff here. There is some stuff here. There is some stuff here. There is some stuff here. There is some stuff here. There is some stuff here. There is some stuff here.</description>
     </item>
     
     <item>
       <title>What?</title>
-      <link>www.aowens.me/post/post3/</link>
+      <link>https://aowens.me/post/post3/</link>
       <pubDate>Fri, 05 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>www.aowens.me/post/post3/</guid>
+      <guid>https://aowens.me/post/post3/</guid>
       <description>There is some stuff here. There is some stuff here. There is some stuff here. There is some stuff here. There is some stuff here. There is some stuff here. There is some stuff here. There is some stuff here. There is some stuff here. There is some stuff here. There is some stuff here. There is some stuff here. There is some stuff here. There is some stuff here. There is some stuff here.</description>
     </item>
     
