@@ -6,27 +6,18 @@
     <description>Recent content in Posts on Alex Owens</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 05 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 08 Jan 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://aowens.me/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>This is a Test Post</title>
-      <link>https://aowens.me/post/post1/</link>
-      <pubDate>Fri, 05 Jan 2018 00:00:00 +0000</pubDate>
+      <title>Hello Hugo!</title>
+      <link>https://aowens.me/post/hello-hugo/</link>
+      <pubDate>Mon, 08 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://aowens.me/post/post1/</guid>
-      <description>There is some stuff here. There is some stuff here. There is some stuff here. There is some stuff here. There is some stuff here. There is some stuff here. There is some stuff here. There is some stuff here. There is some stuff here. There is some stuff here. There is some stuff here. There is some stuff here. There is some stuff here. There is some stuff here. There is some stuff here.</description>
-    </item>
-    
-    <item>
-      <title>What?</title>
-      <link>https://aowens.me/post/post3/</link>
-      <pubDate>Fri, 05 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://aowens.me/post/post3/</guid>
-      <description>There is some stuff here. There is some stuff here. There is some stuff here. There is some stuff here. There is some stuff here. There is some stuff here. There is some stuff here. There is some stuff here. There is some stuff here. There is some stuff here. There is some stuff here. There is some stuff here. There is some stuff here. There is some stuff here. There is some stuff here.</description>
+      <guid>https://aowens.me/post/hello-hugo/</guid>
+      <description>Starting a Blog It&amp;rsquo;s New Year&amp;rsquo;s Resolution time, which is as good a time as any to start my programming blog. I&amp;rsquo;ll start off by introducing myself. My name is Alex Owens, and I&amp;rsquo;m a Computer Science student at Northern Kentucky University. I&amp;rsquo;m in my third year of school, and I&amp;rsquo;m starting this blog as a really informal way to document my development as a programmer. The format for this site will be pretty simple: weekly blog posts about whatever I&amp;rsquo;m working on that week.</description>
     </item>
     
   </channel>
