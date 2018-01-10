@@ -13,7 +13,7 @@ post or length requirement, I'm just going to share my work with whoever ends up
 different every single week. Most of the time, I'd imagine that the projects will be pretty small, as I work a job and go to school full-time, but I'm going to try to be as
 consistent and as varied as possible. It's also possible that I'll have multiple things to talk about some weeks, and I may do some blogs related to game design instead of programming.
 
-I used the wonderful [Hugo Framework](www.gohugo.io) to make this site, and I've created my own (very barebones as you can see) theme to go along with it. At the time of writing this, there are some
+I used the wonderful [Hugo Framework](https://gohugo.io/) to make this site, and I've created my own (very barebones as you can see) theme to go along with it. At the time of writing this, there are some
 changes to the design that I have planned, so at some point over the next few weeks this site should start looking better. If you're interested in checking out the source code for the site, it's on my
 GitHub page at the [swsite repository](https://github.com/aowens-21/swsite). That being said, there are a few themes that I looked at while making my own as a sort of supplement to the official Hugo documentation, and they're very good references as well. They are the [Minimal Theme](https://themes.gohugo.io/minimal/) by [Calin Tataru](https://github.com/calintat) and the [Journal Theme](https://themes.gohugo.io/hugo-journal/) by [Damien Caselli](https://github.com/damiencaselli).
 
