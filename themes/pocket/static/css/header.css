@@ -1,9 +1,13 @@
+html {
+  background-color: #F0EAD6;
+}
+
 .header {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #007936;
-  color: white;
+  background-color: #312c32;
+  color: #F0EAD6;
   width: 100%;
   font-family: 'Arvo', serif;
 }
@@ -16,7 +20,7 @@
 
 .header > h1 > a {
   text-decoration: none;
-  color: white;
+  color: #F0EAD6;
 }
 
 .header > h2 {
@@ -29,7 +33,7 @@ main {
   margin-top: 3em;
   font-family: 'Arvo', serif;
   padding-top: 14em;
-  color: #007936;
+  color: #312c32;
 }
 
 main > h1 {
@@ -65,5 +69,5 @@ main > h1 {
 }
 
 .item > a {
-  color: #007936;
+  color: #312c32  ;
 }

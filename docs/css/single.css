@@ -2,8 +2,9 @@
     margin: 0 auto;
     margin-top: 3em;
     width: 70%;
-    color: #2A3439;
+    color: #312c32;
     font-size: 1em;
+    line-height: 200%;
 }
 
 .post-title {
@@ -21,10 +22,10 @@
   width: 70%;
 }
 
-.back-to-index > a {
-  color: #007936;
+a {
+  color: #312c32;
 }
 
 a:visited {
-  color: blue;
+  color: #312c32;
 }

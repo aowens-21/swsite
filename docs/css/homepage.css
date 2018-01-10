@@ -1,5 +1,5 @@
 body {
-  background-color: #007936;
+  background-color: #F0EAD6;
 }
 
 .title {
@@ -11,14 +11,14 @@ body {
   font-family: 'Arvo', serif;
   font-size: 12vh;
   padding: 3rem;
-  border: thick solid white;
+  border: thick solid #312c32;
   display: inline;
-  color: white;
+  color: #312c32;
 }
 
 .title > h2 {
   font-family: 'Arvo', serif;
-  color: white;
+  color: #312c32;
   font-style: italic;
 }
 
@@ -30,11 +30,12 @@ body {
 .links > a {
   font-family: 'Arvo', serif;
   font-size: 1em;
-  color: white;
+  color: #312c32;
   margin-left: 1em;
   margin-right: 1em;
   display: inline-block;
   text-decoration: none;
+  font-weight: bold;
   width: 7em;
   height: 7em;
   line-height: 7em;
@@ -43,6 +44,7 @@ body {
 }
 
 .links > a:hover {
-  color: #007936;
-  background-color: white;
+  color: #F0EAD6;
+  background-color: #312c32;
+  font-style: italic;
 }
