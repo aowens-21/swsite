@@ -6,10 +6,20 @@
     <description>Recent content on Alex Owens</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 08 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 15 Jan 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://aowens.me/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>A Simple Level Editor</title>
+      <link>https://aowens.me/post/a-simple-level-editor/</link>
+      <pubDate>Mon, 15 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://aowens.me/post/a-simple-level-editor/</guid>
+      <description>Level Editor Code available here.
+This is the second week of 2018 and it&amp;rsquo;s the second week I decided to do some programming and blogging. This week I wanted to write something in Python because I like the language a lot and I&amp;rsquo;m going to be using it for a class this semester. I decided to make a very small grid-based level editor using the 2D game framework pygame. This level editor is super simple, and it needs a lot of work before I&amp;rsquo;d use it for an actual game, but it was a good learning experience in both python and pygame.</description>
+    </item>
     
     <item>
       <title>Hello Hugo!</title>

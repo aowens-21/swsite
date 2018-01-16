@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/header.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arvo"/>
+    <title>A Simple Level Editor</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1><a href="https://aowens.me/">Alex Owens</a></h1>
+      <h2>A programming and game development blog.</h2>
+    </div>
+
+<head>
+  <link rel="stylesheet" href="/css/single.css"/>
+</head>
+<main>
+  <div class="post-title">
+    <h1>A Simple Level Editor</h1>
+    <h4>Posted on January 15, 2018 </h4>
+  </div>
+  <div class="post-content">
+    <hr>
+    
+
+<h2 id="level-editor">Level Editor</h2>
+
+<p>Code available <a href="https://github.com/aowens-21/grid-level-editor">here</a>.</p>
+
+<p>This is the second week of 2018 and it&rsquo;s the second week I decided to do some programming
+and blogging. This week I wanted to write something in Python because I like the language a lot
+and I&rsquo;m going to be using it for a class this semester.  I decided to make a very small grid-based level editor using the 2D game framework <a href="https://pygame.org/">pygame</a>. This level editor is super simple, and it needs a lot of work before I&rsquo;d use it for an actual game, but it was a good learning experience in both python and pygame.</p>
+
+<p>This is a screenshot of what it looks like using the actual editor:</p>
+
+<p align="center">
+  <img src="/img/level-editor-screenshot.png">
+</p>
+
+<p>As you can see, I probably won&rsquo;t be selling it any time soon, but it does resemble a 2D platformer level.</p>
+
+<p><br/></p>
+
+<h2 id="uses">Uses</h2>
+
+<p>If you aren&rsquo;t familiar with how this might be used, I can think of a couple of examples that might illustrate its purpose a little better.</p>
+
+<h4 id="import-into-a-2d-platformer-engine">Import into a 2D Platformer Engine</h4>
+
+<p>This level editor exports to a text file that has an array of integers, so for example something like:</p>
+
+<pre><code>0 0 0  
+0 0 0  
+1 1 1  
+</code></pre>
+
+<p>would be empty space with a platform on the bottom of the level. You could quickly make levels in my tool and then have your engine read in the text file to populate the structure of your level. This saves more time than hand coding each level (or it&rsquo;s at least a little more enjoyable).</p>
+
+<h4 id="raycasting-engine">Raycasting Engine</h4>
+
+<p><a href="https://en.wikipedia.org/wiki/Wolfenstein_3D">Wolfenstein 3D</a> used a technique called <a href="https://en.wikipedia.org/wiki/Ray_casting">Raycasting</a> to render a level that appears 3D. There is a very popular implementation of a similar, simple raycasting engine available at <a href="http://lodev.org/cgtutor/raycasting.html">Lode Vandevenne&rsquo;s site</a>. In this implementation, the 3D map is represented in an almost identical way, meaning you could use my tool to make maps for a raycasting engine and then read them in through a renderer.</p>
+
+<p><br/></p>
+
+<h2 id="python-is-good">Python Is Good</h2>
+
+<p>I&rsquo;m not going to go into the entire codebase, because you can see it publicly on my github if you&rsquo;re curious, but there are a couple of awesome features in Python that, in my opinion, made my code cleaner/less cluttered.</p>
+
+<h4 id="list-comprehensions">List Comprehensions</h4>
+
+<p>Digital Ocean has <a href="https://www.digitalocean.com/community/tutorials/understanding-list-comprehensions-in-python-3">an amazing article</a> discussing what you can do with Python 3 list comprehensions, and I used quite a few in this level editor.</p>
+
+<p>For example, here is the code to initialize an empty level that runs on startup:</p>
+
+<pre><code class="language-python">                def init_level_structure(self):
+                    return [[Block(x=x, y=y) for x in range(self.width_in_blocks)] for y in range(self.height_in_blocks)]
+</code></pre>
+
+<p>In other languages, this would probably have to be nested for loops on multiple lines and you&rsquo;d have to have a local variable to store the array before you filled it. In Python, however, you can use a list comprehension to keep the code less-cluttered but still readable.</p>
+
+<h4 id="enumerate">Enumerate</h4>
+
+<p>Python&rsquo;s <a href="https://docs.python.org/2/library/functions.html#enumerate">enumerate</a> function is also incredibly useful, and I think it might be underused. Here&rsquo;s an example of its usefulness:</p>
+
+<pre><code class="language-python">                for x, row in enumerate(self.level_structure):
+                    for y, block in enumerate(row):
+                        txt_level[x][y] = 1 if block.filled else 0
+</code></pre>
+
+<p>This function essentially combines the iterator for loop with an indexed for loop. In this example I&rsquo;m looping over a 2D array called <code>self.level_structure</code>. <code>row</code>, as you might expect, is the row in the array (the data), whereas <code>x</code> keeps an index of the corresponding row. This way I am able to keep an index and iterate over the data; this is the &ldquo;pythonic&rdquo; way of doing this kind of task.</p>
+
+<p>If you&rsquo;re learning Python and you want to find more little tips like this, I recommend checking out Brett Slatkin&rsquo;s book: <a href="https://effectivepython.com/">Effective Python</a>. Or if you don&rsquo;t care for programming books, just google &ldquo;effective python tips&rdquo; and I&rsquo;m sure you&rsquo;ll find something similar.</p>
+
+<p><br/></p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>I learned a lot about Python with this little project, and I&rsquo;ll probably do many more of these blogs about Python and Pygame over the next year or so, because I really like Python. If you enjoyed this post, check out my other blogs or <a href="https://github.com/aowens-21">my github</a>, where you can find all the code from all of these blogs. Thanks a lot for reading!</p>
+
+    <hr>
+  </div>
+  <div class="back-to-index">
+    <a href="/post/">Back to Post List</a>
+  </div>
+</main>
+  </body>
+</html>
+
