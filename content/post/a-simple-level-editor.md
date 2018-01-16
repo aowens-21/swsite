@@ -67,7 +67,7 @@ Python's [enumerate](https://docs.python.org/2/library/functions.html#enumerate)
                         txt_level[x][y] = 1 if block.filled else 0
 ```
 
-This function essentially combines the iterator for loop with an indexed for loop. In this example I'm looping over a 2D array called `self.level_structure`. `row`, as you might expect, is the row in the array (the data), whereas `x` keeps an index of the corresponding row. This way I am able to keep an index and iterate over the data; this is the "pythonic" way of doing this kind of task.
+This function essentially combines the iterator for loop with an indexed for loop. In this example I'm looping over a 2D array called `self.level_structure`. The `row`, as you might expect, is the row in the array (the data), whereas `x` keeps an index of the corresponding row. This way I am able to keep an index and iterate over the data; this is the "pythonic" way of doing this kind of task.
 
 If you're learning Python and you want to find more little tips like this, I recommend checking out Brett Slatkin's book: [Effective Python](https://effectivepython.com/). Or if you don't care for programming books, just google "effective python tips" and I'm sure you'll find something similar.
 
