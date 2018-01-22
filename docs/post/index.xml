@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Alex Owens</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 15 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 21 Jan 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://aowens.me/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Sorts With Python</title>
+      <link>https://aowens.me/post/sorts-with-python/</link>
+      <pubDate>Sun, 21 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://aowens.me/post/sorts-with-python/</guid>
+      <description>Sorts With Python Code available here.
+This week I didn&amp;rsquo;t have a whole lot of spare time to program, so I did something pretty standard for this blog: sorting. I decided to implement 3 popular sorts (and maybe more to come) in Python: Bubble Sort, Insertion Sort, and Merge Sort. I&amp;rsquo;ve seen and implemented these sorts before, but I thought it would be a decent exercise to do them in Python since that&amp;rsquo;s the language I&amp;rsquo;ve been most interested in recently.</description>
+    </item>
     
     <item>
       <title>A Simple Level Editor</title>
