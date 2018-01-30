@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/header.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arvo"/>
+    <title>Doing the Django Tutorial</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1><a href="https://aowens.me/">Alex Owens</a></h1>
+      <h2>A programming and game development blog.</h2>
+    </div>
+
+<head>
+  <link rel="stylesheet" href="/css/single.css"/>
+</head>
+<main>
+  <div class="post-title">
+    <h1>Doing the Django Tutorial</h1>
+    <h4>Posted on January 29, 2018 </h4>
+  </div>
+  <div class="post-content">
+    <hr>
+    
+
+<h2 id="doing-the-django-tutorial">Doing the Django Tutorial</h2>
+
+<p>Code is available <a href="https://github.com/aowens-21/intro-django">here</a>.</p>
+
+<p>This is going to be a pretty simple and short blog post, as I didn&rsquo;t get to do much in the way of interesting new things this week. However, I did
+check out the <a href="https://www.djangoproject.com/">Django Framework</a> for Python, and I really enjoyed making a small web application in that. I followed the
+<a href="https://docs.djangoproject.com/en/2.0/intro/tutorial01/">Official Tutorial</a> and I think that&rsquo;s a great intro to the framework in general.</p>
+
+<p>I have a lot of ideas for small apps to make in the future, and I look forward to making more for future blog posts. For now I guess I&rsquo;ll talk
+about some of the features I liked in Django.</p>
+
+<h3 id="structure-of-projects">Structure of Projects</h3>
+
+<p>What I really mean by this is the idea in Django that every project can be made of many different &ldquo;apps&rdquo;, which makes code reuse in many
+different projects very easy. The way you structure your code is important in any decent sized project, and while I can&rsquo;t speak to Django&rsquo;s scalability
+from personal experience, it definitely seems to have taken that factor into consideration.</p>
+
+<p>For example, in the Polling project that the tutorial has you making, you have one project: polls. This codebase is all you need to make something so small, but
+the potential to reuse some or all of the code from that app in a totally different Django project is powerful.</p>
+
+<h3 id="testing-features">Testing features</h3>
+
+<p>Django&rsquo;s tutorial <a href="https://docs.djangoproject.com/en/2.0/intro/tutorial05/">dedicates a whole section</a> to testing, and as someone who
+is interested in <a href="https://en.wikipedia.org/wiki/Test-driven_development">Test-Driven Development</a>, that is a huge plus.</p>
+
+<p>Django features extensive testing tools for your models and for how your views are populated, and the way this is set up is in your application&rsquo;s <code>tests.py</code> file.
+This structure can be changed and is very flexible, but by default Django searches for any functions that start with &ldquo;test&rdquo;, so you can sort of design your test
+structure however you like. Another thing to mention is that testing configurations work out of the box and you don&rsquo;t have to do really anything as far as I can tell
+to start testing immediately.</p>
+
+<h3 id="ease-of-use">Ease Of Use</h3>
+
+<p>This is a big one, because a lot goes into a modern web application. Django sets up so many things including routing, views, and database integration for you,
+so you can focus more on writing the actual logic for your application instead of boilerplate setup. That&rsquo;s not to say that boilerplate isn&rsquo;t useful or necessary
+in Django, as I&rsquo;m sure that larger and more complex projects probably have to get their hands dirty with deeper configuration and setup.</p>
+
+<p>The fact is though that while I might end up trying out something lower-level like <a href="http://flask.pocoo.org/">Flask</a>, which is also very promising, I&rsquo;m really enjoying Django (not
+to mention I&rsquo;ve barely scratched the surface of what it&rsquo;s capable of).</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>I&rsquo;m sorry that this wasn&rsquo;t a huge post and I don&rsquo;t have much to offer you this week outside of a recommendation to try the Django tutorial. In the coming weeks I&rsquo;d
+like to make a small web app or two using Django so I can get a better understanding of the framework and cement my opinion of it. I hope to see you back next week to, hopefully, talk
+about some more Django. Thanks for reading!</p>
+
+    <hr>
+  </div>
+  <div class="back-to-index">
+    <a href="/post/">Back to Post List</a>
+  </div>
+</main>
+  </body>
+</html>
+
