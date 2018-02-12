@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Alex Owens</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 29 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 11 Feb 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://aowens.me/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Making a Crappy Django App</title>
+      <link>https://aowens.me/post/made-a-bad-django-app/</link>
+      <pubDate>Sun, 11 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://aowens.me/post/made-a-bad-django-app/</guid>
+      <description>A Due Date App in Django Code is available here.
+I&amp;rsquo;m sorry this blog post is late, which means there&amp;rsquo;s another one coming tomorrow night. This week I focused on learning a bit more about Django by making an app that was sort of like the tutorial app I made last week. I decided to do something that at least has the potential to be useful: a date-sorted to-do list.</description>
+    </item>
     
     <item>
       <title>Doing the Django Tutorial</title>
