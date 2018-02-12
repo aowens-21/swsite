@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/header.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arvo"/>
+    <title>Making a Crappy Django App</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1><a href="https://aowens.me/">Alex Owens</a></h1>
+      <h2>A programming and game development blog.</h2>
+    </div>
+
+<head>
+  <link rel="stylesheet" href="/css/single.css"/>
+</head>
+<main>
+  <div class="post-title">
+    <h1>Making a Crappy Django App</h1>
+    <h4>Posted on February 11, 2018 </h4>
+  </div>
+  <div class="post-content">
+    <hr>
+    
+
+<h2 id="a-due-date-app-in-django">A Due Date App in Django</h2>
+
+<p>Code is available <a href="https://github.com/aowens-21/due-date">here</a>.</p>
+
+<p>I&rsquo;m sorry this blog post is late, which means there&rsquo;s another one coming tomorrow night. This week I focused on learning a bit more about
+<a href="https://www.djangoproject.com/">Django</a> by making an app that was sort of like the tutorial app I made last week. I decided to do something
+that at least has the potential to be useful: a date-sorted to-do list.</p>
+
+<h2 id="the-app">The App</h2>
+
+<p>Here&rsquo;s a picture of the homepage of the app:</p>
+
+<p align="center">
+  <img src="/img/due-date-index.png">
+</p>
+
+<p>While it&rsquo;s very primitive in terms of style, I think the building blocks are there. In Django especially it would be pretty easy to expand this
+into a pretty interesting and useful application. What&rsquo;s also interesting is that it&rsquo;s insanely simple to sort the due dates using built-in Django functionality,
+here&rsquo;s the entire function for the index page view:</p>
+
+<pre><code class="language-python">                  def index(request):
+                      upcoming_assignments = Assignment.objects.filter(completed=False).order_by('due_date')
+                      context = {'upcoming_assignments': upcoming_assignments}
+                      return render(request, 'due/index.html', context)
+</code></pre>
+
+<p>All it&rsquo;s doing is storing all the assignment objects that aren&rsquo;t completed into a list and then sorting them the due date field. The view then stores
+this into a dictionary called <code>context</code>, and that is passed to the page template which uses it to render the actual date. This brings us to
+the template:</p>
+
+<pre><code class="language-HTML">                  &lt;h1&gt;Upcoming Assignments&lt;/h1&gt;
+                  &lt;br /&gt;
+                  {% if upcoming_assignments %}
+                    &lt;ul&gt;
+                    {% for assignment in upcoming_assignments %}
+                        &lt;li&gt;&lt;a href=&quot;{% url 'due:detail' assignment.id %}&quot;&gt;{{ assignment.name }} - Due: {{ assignment.due_date }}&lt;/a&gt;&lt;/li&gt;
+                    {% endfor %}
+                  {% else %}
+                    &lt;p&gt;No assignments due, take a break!&lt;/p&gt;
+                  {% endif %}
+                  &lt;br /&gt;
+                  &lt;a class=&quot;btn btn-primary&quot; href=&quot;{% url 'due:create_assignment' %}&quot;&gt;Create Assignment&lt;/a&gt;
+</code></pre>
+
+<p>As you can see, the template is pretty simple too. It&rsquo;s just Django&rsquo;s official template language interspersed with some HTML. You can see we&rsquo;re checking for the
+<code>upcoming_assignments</code> list that pass in from the view, and if there aren&rsquo;t any we display a static message. This language is pretty flexible and I believe the context
+dictionary can be as big as you need it to.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>There&rsquo;s a lot of other, similar code for the few other pages in the application that you can check out over on my GitHub. There&rsquo;s also a lot
+of Django features I didn&rsquo;t use here, and I mean a lot. For example, instead of using functions to create views to handle responses, you can have
+<a href="https://docs.djangoproject.com/en/2.0/topics/class-based-views/">class-based views</a> which I think allows for more scalability. That is one of the things I really enjoy
+about using Django. It seems like overkill for a really small project like this (and it probably is), but if you&rsquo;re building something big then the features
+are pretty much there whenever you need them. I think I&rsquo;m going to stick with Django for a couple more weeks, so the next few blog posts might also be Django related, but
+after that I&rsquo;m going to check out a smaller framework like <a href="http://flask.pocoo.org/">Flask</a> or <a href="https://trypyramid.com/">Pyramid</a>. I think I need to dip my toes into the
+basics before I dive back into something as huge as Django.</p>
+
+    <hr>
+  </div>
+  <div class="back-to-index">
+    <a href="/post/">Back to Post List</a>
+  </div>
+</main>
+  </body>
+</html>
+
