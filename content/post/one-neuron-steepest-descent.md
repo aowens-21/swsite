@@ -148,5 +148,5 @@ does what.
 ## Conclusion
 This is the first part in my deep learning series. In the next post we'll look at a very small network that actually uses two layers to learn the boolean XOR
 function, which is impossible for one neuron, or even one layer of neurons to learn. Hopefully this wasn't too dense and you learned something about deep learning, and if
-you want to learn more about the ideas behind deep learning, I can recommend [this book](http://www.deeplearningbook.org/). That book is pretty long (it's the textbook for
+you want to learn more about the ideas behind deep learning, I can recommend [this book](http://www.deeplearningbook.org/). That book is pretty large (it's the textbook for
 my college course), however, so if you want something lighter I can also recommend [this one](https://www.amazon.com/Fundamentals-Deep-Learning-Next-Generation-Intelligence/dp/1491925612/ref=sr_1_1?ie=UTF8&qid=1519274871&sr=8-1&keywords=fundamentals+of+deep+learning).

@@ -6,10 +6,21 @@
     <description>Recent content on Alex Owens</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 21 Feb 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 03 Mar 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://aowens.me/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Deep Learning Concepts Pt. 2: A Basic Neural Network</title>
+      <link>https://aowens.me/post/simple-neural-network/</link>
+      <pubDate>Sat, 03 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://aowens.me/post/simple-neural-network/</guid>
+      <description>Network Steepest Descent in Python Code is available here.
+Welcome to part two of my series on Deep Learning concepts, if you haven&amp;rsquo;t read through part one then I&amp;rsquo;d suggest doing that. This will be a much shorter post that builds on all of the ideas I covered there.
+What makes a network? In the last post we talked about how artificial neurons are represented. While a neuron is just a single learning entity, a network is a collection of layers of neurons.</description>
+    </item>
     
     <item>
       <title>Deep Learning Concepts Pt. 1: One Neuron Steepest Descent</title>
